@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Calculator</h1>
+        <p id="head_p">this is my calculator app</p>
+      </header>
+
+      <div id="calcEntire">
+        <!--this is the calculator display-->
+        <div id="calcDisplay">
+            <input type="number" class="calcButton" id="display" readonly>
+        </div>
+        <!--these are the calculator buttons-->
+        <div>
+          <button class="calcButton" id="bt1">1</button>
+          <button class="calcButton" id="bt2">2</button>
+          <button class="calcButton" id="bt3">3</button>
+          <button class="calcButton" id="bt/">/</button>
+          <br />
+          <button class="calcButton" id="bt4">4</button>
+          <button class="calcButton" id="bt5">5</button>
+          <button class="calcButton" id="bt6">6</button>
+          <button class="calcButton" id="bt*">*</button>
+          <br />
+          <button class="calcButton" id="bt7">7</button>
+          <button class="calcButton" id="bt8">8</button>
+          <button class="calcButton" id="bt9">9</button>
+          <button class="calcButton" id="bt-">-</button>
+          <br />
+          <button class="calcButton" id="bt0">0</button>
+          <button class="calcButton" id="bt.">.</button>
+          <button class="calcButton" id="bt=">=</button>
+          <button class="calcButton" id="bt+">+</button>
+        </div>
+      </div>
+    </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
