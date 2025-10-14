@@ -16,30 +16,30 @@
 
       <div id="calcEntire">
         <!--this is the calculator display-->
-        <div id="calcDisplay">
-            <input type="number" class="calcButton" id="display" readonly>
-        </div>
+        <input type="number" name="calcDisplayName" class="calcButton" id="btdisplay" value="" placeholder="enter here" readonly>
         <!--these are the calculator buttons-->
         <div>
-          <button class="calcButton" id="bt1">1</button>
-          <button class="calcButton" id="bt2">2</button>
-          <button class="calcButton" id="bt3">3</button>
-          <button class="calcButton" id="bt/">/</button>
-          <br />
-          <button class="calcButton" id="bt4">4</button>
-          <button class="calcButton" id="bt5">5</button>
-          <button class="calcButton" id="bt6">6</button>
-          <button class="calcButton" id="bt*">*</button>
-          <br />
-          <button class="calcButton" id="bt7">7</button>
-          <button class="calcButton" id="bt8">8</button>
-          <button class="calcButton" id="bt9">9</button>
-          <button class="calcButton" id="bt-">-</button>
-          <br />
-          <button class="calcButton" id="bt0">0</button>
-          <button class="calcButton" id="bt.">.</button>
-          <button class="calcButton" id="bt=">=</button>
-          <button class="calcButton" id="bt+">+</button>
+          <button class="calcButton" id="bt1" onclick="appendToDisplay('1')">1</button>
+          <button class="calcButton" id="bt2" onclick="appendToDisplay('2')">2</button>
+          <button class="calcButton" id="bt3" onclick="appendToDisplay('3')">3</button>
+          <button class="calcButton" id="bt/" onclick="appendToDisplay('/')">/</button>
+          <br>
+          <button class="calcButton" id="bt4" onclick="appendToDisplay('4')">4</button>
+          <button class="calcButton" id="bt5" onclick="appendToDisplay('5')">5</button>
+          <button class="calcButton" id="bt6" onclick="appendToDisplay('6')">6</button>
+          <button class="calcButton" id="bt*" onclick="appendToDisplay('*')">*</button>
+          <br>
+          <button class="calcButton" id="bt7" onclick="appendToDisplay('7')">7</button>
+          <button class="calcButton" id="bt8" onclick="appendToDisplay('8')">8</button>
+          <button class="calcButton" id="bt9" onclick="appendToDisplay('9')">9</button>
+          <button class="calcButton" id="bt-" onclick="appendToDisplay('-')">-</button>
+          <br>
+          <button class="calcButton" id="bt0" onclick="appendToDisplay('0')">0</button>
+          <button class="calcButton" id="bt." onclick="appendToDisplay('.')">.</button>
+          <button class="calcButton" id="bt=" onclick="calculate()">=</button>
+          <button class="calcButton" id="bt+" onclick="appendToDisplay('+')">+</button>
+          <br>
+          <button class="calcButton" id="btclear" onclick="clearDisplay()">clear</button>
         </div>
       </div>
     </main>
