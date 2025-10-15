@@ -1,4 +1,3 @@
-let display = 0;
 
 const displayElement = document.getElementById("btdisplay");
 
@@ -15,9 +14,5 @@ function calculate() {
 }
 
 function clearDisplay() {
-    const btdisplay = document.getElementById('btdisplay');
-    btdisplay.value = "";
+    displayElement.value = "";
 }
-
-
-I need to figure out the calculate function - it isn't working
