@@ -1,16 +1,20 @@
 
 const displayElement = document.getElementById("btdisplay");
 
-function appendToDisplay(value) {
-    displayElement.value += value;
+function appendToDisplay(usersInputValue) {
+    displayElement.value += usersInputValue;
 }
 
 function calculate() {
-    try {
-        displayElement.value = eval(displayElement.value);
+
+            displayElement.value = eval(displayElement.value);
+
+    /*try {
+
     } catch (error) {
         displayElement.value = 'Error';
-    }
+    }*/
+   console.log('hello, world');
 }
 
 function clearDisplay() {
