@@ -10,13 +10,26 @@ main {
     margin-top: 20vh;
 }
 
+button {
+    background-color: chartreuse;
+}
+
 button:hover {
     color: black;
+
+}
+
+div {
+    background-color: brown;
+}
+
+input {
+    background-color: brown;
 }
 
 .calcButton {
     border-radius: 0.5em;
-    border-color: darkslateblue;
+    border-color: white;
 }
 
 #btclear {
@@ -25,9 +38,13 @@ button:hover {
     margin-top: 10px;
 }
 
+/* this section is defining the width */
 #calcEntire {
     width: 320px;
     max-width: 90vw;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 2rem;
 }
 
 #calcEntire > input.calcButton {
